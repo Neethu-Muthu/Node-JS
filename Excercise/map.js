@@ -3,5 +3,3 @@ for(let[key,value] of newMap){
     console.log(`${key}:{value}`);
 
 }
-
-jkdpjgaphaphp
