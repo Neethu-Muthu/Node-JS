@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="shoppingCart.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        <div class="form-group">
+            <label for="item-select">Select Item:</label>
+            <select id="item-select">
+                <option value="Apple" data-price="100">Apple - 100</option>
+                <option value="Banana" data-price="50">Banana - 50</option>
+                <option value="Orange" data-price="150">Orange - 150</option>
+            </select>
+            <label for="item-quantity">Quantity:</label>
+            <input type="number" id="item-quantity" value="1" min="1">
+            <button id="add-to-cart">Add to Cart</button>
+        </div>
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div class="total">
+            Total Cart Value: <span id="total-value">0</span>
+        </div>
+    </div>
+    <script src="shoppingCart.js"></script>
+</body>
+</html>
