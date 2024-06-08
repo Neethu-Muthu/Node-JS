@@ -23,11 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
             row.appendChild(quantityCell);
             
             const priceCell = document.createElement('td');
-            priceCell.textContent = `$${item.price}`;
+            priceCell.textContent = `${item.price}`;
             row.appendChild(priceCell);
             
             const totalCell = document.createElement('td');
-            totalCell.textContent = `$${item.total}`;
+            totalCell.textContent = `${item.total}`;
             row.appendChild(totalCell);
             
             cartTableBody.appendChild(row);
