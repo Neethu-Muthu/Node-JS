@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customizable Clock</title>
+  <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+  <div class="clock">
+    <div id="time"></div>
+    <div id="options">
+      <label for="format">Format:</label>
+      <select id="format">
+        <option value="12">12-hour</option>
+        <option value="24">24-hour</option>
+      </select>
+      <label for="style">Style:</label>
+      <input type="color" id="style">
+    </div>
+    <div id="alarm">
+      <input type="time" id="alarmTime">
+      <input type="text" id="alarmMessage" placeholder="Enter alarm message">
+      <button onclick="setAlarm()">Set Alarm</button>
+    </div>
+    <div id="alarms"></div>
+  </div>
+  
+  <script src="clock.js"></script>
+</body>
+</html>
